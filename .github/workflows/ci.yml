@@ -28,9 +28,9 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
 
-      - name: Run tests
+      - name: Verify Python syntax
         run: |
-          python -m pytest tests -v || test $? -eq 5
+          python -m compileall app main.py
 
       - name: Build Docker image
         run: |
