@@ -14,7 +14,7 @@ app = FastAPI(
         "streaming responses, evaluation metrics, observability logging, "
         "session management, and modular FastAPI architecture."
     ),
-    version="1.9.0",
+    version="2.0.0",
 )
 
 app.add_middleware(

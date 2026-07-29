@@ -10,8 +10,8 @@ async def root():
     """
     return {
         "status": "healthy",
-        "service": "RAG Learning Assistant API",
-        "version": "1.0.0",
+        "service": "Enterprise AI Platform API",
+        "version": "2.0.0",
     }
 
 
