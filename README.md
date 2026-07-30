@@ -33,6 +33,21 @@ It showcases hybrid retrieval, conversation memory, streaming responses, enterpr
 
 ---
 
+## Enterprise Features
+
+- Hybrid Retrieval (Semantic + Keyword Search)
+- GPT-4o-mini Integration
+- Session-Based Conversation Memory
+- Streaming AI Responses
+- Enterprise Evaluation Dashboard
+- Request Logging & Observability
+- Source Citations
+- Docker Containerization
+- GitHub Actions CI/CD
+- Cloud Deployment on Render
+
+---
+
 #  Quick Start
 
 Clone the repository:
