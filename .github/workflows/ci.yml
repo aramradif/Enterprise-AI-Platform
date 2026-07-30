@@ -1,15 +1,20 @@
-name: Enterprise AI Platform CI
+name: Enterprise AI Platform CI/CD
 
 on:
   push:
     branches:
       - main
+
   pull_request:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   test-and-build:
+    name: Test and Build
     runs-on: ubuntu-latest
 
     steps:
@@ -32,6 +37,26 @@ jobs:
         run: |
           python -m compileall app main.py
 
+      - name: Verify FastAPI application
+        run: |
+          python -c "from main import app; print(app.title, app.version)"
+
       - name: Build Docker image
         run: |
           docker build -t enterprise-ai-platform:ci .
+
+  deploy-to-render:
+    name: Deploy to Render
+    runs-on: ubuntu-latest
+    needs: test-and-build
+
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Trigger Render deployment
+        env:
+          RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        run: |
+          curl --fail --show-error --silent \
+            --request POST \
+            "$RENDER_DEPLOY_HOOK_URL"
