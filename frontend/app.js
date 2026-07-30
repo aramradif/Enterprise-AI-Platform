@@ -298,7 +298,7 @@ function renderSettingsView() {
 
                     <div class="setting-row">
                         <span>Platform Version</span>
-                        <strong>v1.9.0</strong>
+                        <strong>v2.0.0</strong>
                     </div>
 
                     <div class="setting-row">

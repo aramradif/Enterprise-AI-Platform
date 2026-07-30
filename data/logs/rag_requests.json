@@ -334,5 +334,77 @@
     "completion_tokens": 90,
     "total_tokens": 971,
     "estimated_cost_usd": 0.00018615
+  },
+  {
+    "timestamp": "2026-07-30T01:19:49.042948+00:00",
+    "question": "What is RAG?",
+    "status": "success",
+    "retrieval_time_ms": 895.45,
+    "llm_time_ms": 2042.0,
+    "documents_retrieved": 3,
+    "prompt_tokens": 543,
+    "completion_tokens": 66,
+    "total_tokens": 609,
+    "estimated_cost_usd": 0.00012105
+  },
+  {
+    "timestamp": "2026-07-30T01:36:34.433692+00:00",
+    "question": "What is RAG?",
+    "status": "success",
+    "retrieval_time_ms": 1897.8,
+    "llm_time_ms": 2531.69,
+    "documents_retrieved": 3,
+    "prompt_tokens": 645,
+    "completion_tokens": 66,
+    "total_tokens": 711,
+    "estimated_cost_usd": 0.00013635
+  },
+  {
+    "timestamp": "2026-07-30T20:57:29.781653+00:00",
+    "question": "What is RAG?",
+    "status": "success",
+    "retrieval_time_ms": 2725.22,
+    "llm_time_ms": 2574.16,
+    "documents_retrieved": 3,
+    "prompt_tokens": 436,
+    "completion_tokens": 82,
+    "total_tokens": 518,
+    "estimated_cost_usd": 0.0001146
+  },
+  {
+    "timestamp": "2026-07-30T21:05:54.498473+00:00",
+    "question": "What is RAG?",
+    "status": "success",
+    "retrieval_time_ms": 1263.66,
+    "llm_time_ms": 2786.71,
+    "documents_retrieved": 3,
+    "prompt_tokens": 547,
+    "completion_tokens": 83,
+    "total_tokens": 630,
+    "estimated_cost_usd": 0.00013185
+  },
+  {
+    "timestamp": "2026-07-30T21:06:40.340671+00:00",
+    "question": "What is RAG?",
+    "status": "success",
+    "retrieval_time_ms": 1077.48,
+    "llm_time_ms": 2554.24,
+    "documents_retrieved": 3,
+    "prompt_tokens": 666,
+    "completion_tokens": 82,
+    "total_tokens": 748,
+    "estimated_cost_usd": 0.0001491
+  },
+  {
+    "timestamp": "2026-07-30T21:11:32.313486+00:00",
+    "question": "What is RAG?",
+    "status": "success",
+    "retrieval_time_ms": 1095.36,
+    "llm_time_ms": 3171.35,
+    "documents_retrieved": 3,
+    "prompt_tokens": 784,
+    "completion_tokens": 83,
+    "total_tokens": 867,
+    "estimated_cost_usd": 0.0001674
   }
 ]

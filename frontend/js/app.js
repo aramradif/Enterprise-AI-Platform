@@ -106,7 +106,7 @@ function renderEvaluationView() {
                     placeholder="Ask an evaluation question..."
                 ></textarea>
 
-                <button id="evaluation-button">
+                <button id="evaluation-button" type="button">
                     Evaluate
                 </button>
             </div>
@@ -1340,7 +1340,10 @@ const cleanAnswer = fullAnswer
         }
     }
 
-    button.addEventListener("click", runEvaluation);
+    button.addEventListener("click", function (event) {
+    event.preventDefault();
+    runEvaluation();
+});
 
     questionBox.addEventListener("keydown", function (event) {
 

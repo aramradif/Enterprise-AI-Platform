@@ -96,7 +96,7 @@ export function renderSettingsView(workspace) {
 
                     <div class="setting-row">
                         <span>Platform Version</span>
-                        <strong>v1.9.0</strong>
+                        <strong>v2.0.0</strong>
                     </div>
 
                     <div class="setting-row">
@@ -106,7 +106,12 @@ export function renderSettingsView(workspace) {
 
                     <div class="setting-row">
                         <span>Environment</span>
-                        <strong>Development</strong>
+                        <strong>Production Ready</strong>
+                    </div>
+
+                    <div class="setting-row">
+                        <span>Deployment</span>
+                        <strong>Render Cloud</strong>
                     </div>
                 </div>
             </div>
