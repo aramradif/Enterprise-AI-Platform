@@ -12,10 +12,17 @@
 ![Render](https://img.shields.io/badge/Cloud-Render-46E3B7)
 ![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?logo=githubactions)
 ![License](https://img.shields.io/badge/License-MIT-green)
+![GitHub Actions](https://github.com/aramradif/Enterprise-AI-Platform/actions/workflows/ci.yml/badge.svg)
 
-**Enterprise AI Platform** is a production-ready AI application demonstrating modern enterprise AI engineering using **Retrieval-Augmented Generation (RAG)**, **FastAPI**, **OpenAI**, **ChromaDB**, **Docker**, **GitHub Actions**, and **Render**.
+## Overview
 
-It showcases hybrid retrieval, conversation memory, streaming responses, enterprise observability, evaluation metrics, and cloud deployment using a scalable modular architecture.
+**Enterprise AI Platform** is a production-ready Retrieval-Augmented Generation (RAG) application built with **FastAPI**, **OpenAI GPT-4o-mini**, **ChromaDB**, **Docker**, **GitHub Actions**, and **Render Cloud**.
+
+The platform combines hybrid retrieval, conversation memory, AI-generated conversation summaries, streaming responses, evaluation metrics, logging & observability, automated testing with **Pytest**, and a fully automated **GitHub Actions CI/CD** pipeline for reliable cloud deployment.
+
+Every push to the `main` branch automatically validates the FastAPI application, executes automated tests, builds the Docker image, and deploys the latest version to Render Cloud after all quality checks pass.
+
+---
 
 ###  Live Demo
 
@@ -132,8 +139,9 @@ Key capabilities include:
 - RESTful FastAPI API
 - Interactive Enterprise Web Interface
 - Docker Containerization
-- GitHub Actions CI Pipeline
-- Cloud Deployment on Render
+- Automated Testing (Pytest)
+- GitHub Actions CI/CD Pipeline
+- Automated Render Deployment
 
 The project follows a modular enterprise architecture designed for scalability, maintainability, and production deployment while showcasing real-world AI engineering workflows.
 
@@ -304,6 +312,22 @@ Analyze request history and system activity through centralized logging. The das
 
 The Enterprise AI Platform has evolved from a Retrieval-Augmented Generation (RAG) prototype into a production-ready enterprise AI application featuring cloud deployment, observability, conversation management, and a modern web platform.
 
+Status:
+
+✔ Production Ready
+
+✔ Dockerized
+
+✔ CI/CD Enabled
+
+✔ Cloud Deployed
+
+✔ Automated Testing
+
+✔ Enterprise Architecture
+
+✔ Observability & Evaluation
+
 ---
 
 ## Latest Release (v2.0)
@@ -323,7 +347,7 @@ The Enterprise AI Platform has evolved from a Retrieval-Augmented Generation (RA
 - Session Lifecycle API
 - Production Health Endpoint
 - Docker Containerization
-- GitHub Actions CI Pipeline
+- GitHub Actions CI/CD Pipeline
 - Cloud Deployment on Render
 
 ---
@@ -410,8 +434,9 @@ The Enterprise AI Platform has evolved from a Retrieval-Augmented Generation (RA
 ## DevOps & Deployment
 
 - Docker Containerization
-- GitHub Actions CI Pipeline
-- Cloud Deployment on Render
+- GitHub Actions CI/CD
+- Automated Testing with Pytest
+- Automated Deployment to Render Cloud
 - Environment Variable Management
 - Production Health Checks
 
@@ -424,6 +449,21 @@ The Enterprise AI Platform has evolved from a Retrieval-Augmented Generation (RA
 - Configuration-Based Design
 - Extensible Project Structure
 - Production-Ready Codebase
+
+---
+
+# Automated CI/CD Pipeline
+
+Every push to the `main` branch automatically executes the following workflow:
+
+1. Install project dependencies
+2. Validate Python source code
+3. Verify FastAPI application startup
+4. Execute automated Pytest tests
+5. Build the Docker container image
+6. Trigger automated deployment to Render Cloud
+
+Deployment occurs only after all validation and automated tests pass successfully.
 
 ---
 
@@ -473,9 +513,10 @@ The Enterprise AI Platform has evolved from a Retrieval-Augmented Generation (RA
 
 ## DevOps & Deployment
 
-- Docker
 - GitHub Actions
-- Render
+- Pytest
+- Docker
+- Render Cloud
 
 ---
 
@@ -681,7 +722,7 @@ The Enterprise AI Platform is being developed incrementally with a focus on prod
 ### DevOps & Deployment
 
 - Docker Containerization
-- GitHub Actions CI Pipeline
+- GitHub Actions CI/CD Pipeline
 - Render Cloud Deployment
 - Production Health Endpoint
 
